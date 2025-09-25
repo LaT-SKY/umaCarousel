@@ -1,0 +1,32 @@
+#loading {
+    height: 100%;
+    width: 100%;
+    background-color: #eee;
+    
+	display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    
+    transition:
+            border-radius 1s ease,
+            transform  1s ease-in-out;
+    
+    overflow: hidden;
+}
+
+#loading svg {
+    width: 30rem;
+    
+    transform: translateY(-10%);
+    transition: transform 0.3s ease-in-out;
+    animation: 
+        float 3s ease-in-out infinite,
+        pulse-glow 2s ease-in-out infinite alternate;
+    filter: drop-shadow(0 0 20px rgba(255, 107, 107, 0.3));
+}
+
+#loading svg:hover {
+    transform: translateY(-10%) scale(1.05);
+    animation-play-state: paused;
+}

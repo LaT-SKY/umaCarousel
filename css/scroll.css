@@ -1,0 +1,38 @@
+#scroll{
+	position: fixed;
+	
+	width: 3rem;
+	height: 5rem;
+	color: #eee;
+	
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	
+	bottom: 8vmin;
+	right: 1vmax;
+	
+	animation: shrink-float 2s infinite ease-in-out;
+	
+	writing-mode: vertical-lr;
+	
+	z-index: 999;
+}
+#scroll .arrow{
+	width: 1em;
+	height: 1em;
+	fill: #eee;
+	
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	
+	transform: rotate(90deg);
+	transform-origin: center;
+}
+#scroll .arrow>:first-child{
+	opacity: 0.8;
+}

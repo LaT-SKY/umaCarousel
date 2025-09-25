@@ -1,0 +1,49 @@
+@import "css/animate.css";
+@import "css/loading.css";
+@import "res/fonts/fonts.css";
+@import "css/carousel.css";
+@import "css/scroll.css";
+@import "css/modal.css";
+@import "css/tip.css";
+
+/* 重置样式 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style: none;
+}
+
+/* 全局样式 */
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #03000f;
+    font-size: 24px;
+    
+    font-family: "tie", sans-serif;
+    
+    overflow: hidden;
+}
+/*响应式适配*/
+@media screen and (max-width: 768px) {
+    body{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 480px) {
+    body{
+        font-size: 12px;
+    }
+}
+
+.hide{
+    display: none;
+}

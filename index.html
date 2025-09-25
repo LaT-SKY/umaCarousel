@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赛马娘</title>
+    <link rel="stylesheet" href="index.css">
+	<link rel="icon" href="favicon.ico">
+</head>
+<body>
+
+    <div id="loading">
+	    <svg t="1758696170518" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1526" width="200" height="200">
+            <defs>
+                <linearGradient id="flowing-gradient" x1="0%" y1="0%" x2="100%" y2="0%" gradientUnits="objectBoundingBox">
+                    <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1">
+                        <animate attributeName="stop-color" 
+                                values="#ff6b6b;#4ecdc4;#45b7d1;#96ceb4;#feca57;#ff9ff3;#ff6b6b" 
+                                dur="3s" 
+                                repeatCount="indefinite"/>
+                    </stop>
+                    <stop offset="25%" style="stop-color:#4ecdc4;stop-opacity:1">
+                        <animate attributeName="stop-color" 
+                                values="#4ecdc4;#45b7d1;#96ceb4;#feca57;#ff9ff3;#ff6b6b;#4ecdc4" 
+                                dur="3s" 
+                                repeatCount="indefinite"/>
+                    </stop>
+                    <stop offset="50%" style="stop-color:#45b7d1;stop-opacity:1">
+                        <animate attributeName="stop-color" 
+                                values="#45b7d1;#96ceb4;#feca57;#ff9ff3;#ff6b6b;#4ecdc4;#45b7d1" 
+                                dur="3s" 
+                                repeatCount="indefinite"/>
+                    </stop>
+                    <stop offset="75%" style="stop-color:#96ceb4;stop-opacity:1">
+                        <animate attributeName="stop-color" 
+                                values="#96ceb4;#feca57;#ff9ff3;#ff6b6b;#4ecdc4;#45b7d1;#96ceb4" 
+                                dur="3s" 
+                                repeatCount="indefinite"/>
+                    </stop>
+                    <stop offset="100%" style="stop-color:#feca57;stop-opacity:1">
+                        <animate attributeName="stop-color" 
+                                values="#feca57;#ff9ff3;#ff6b6b;#4ecdc4;#45b7d1;#96ceb4;#feca57" 
+                                dur="3s" 
+                                repeatCount="indefinite"/>
+                    </stop>
+                    <animateTransform attributeName="gradientTransform"
+                                    type="rotate" 
+                                    values="0 512 512;360 512 512" 
+                                    dur="4s" 
+                                    repeatCount="indefinite"/>
+                </linearGradient>
+                <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                    <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                    <feMerge> 
+                        <feMergeNode in="coloredBlur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+            </defs>
+            <path d="M367.36 695.552c17.152 17.92 25.856 40.704 25.856 63.744 0 23.04-8.96 46.592-26.88 64.768-18.176 17.664-41.472 26.368-64.768 26.368s-46.592-8.704-64.768-26.368c-71.424-71.424-112.64-170.752-112.64-271.872 0-77.312 24.064-151.04 65.024-212.736C324.096 138.24 611.84 110.336 782.848 283.648c107.52 108.8 139.008 273.92 80.64 415.488-19.456 46.336-47.616 88.832-83.456 124.672-17.664 17.664-40.96 26.368-64.512 26.368s-46.848-8.704-64.768-26.368c-17.408-18.176-26.88-41.472-26.88-64.768 0-23.552 9.216-46.592 26.88-64.768h0.512-0.512C718.336 627.2 729.6 520.704 675.84 440.32c-79.36-118.528-254.976-118.528-334.336 0-21.248 32.512-33.792 71.424-33.792 111.872 0 53.76 20.736 104.448 58.88 142.592l0.768 0.768z m-123.904-56.32c-16.64 0-30.464 13.312-30.464 30.72 0 16.64 13.824 30.208 30.464 30.208 16.896 0 30.464-13.568 30.464-30.208 0-17.408-13.568-30.72-30.464-30.72zM219.648 486.4c-16.896 0-30.208 13.568-30.208 30.72 0 16.128 13.312 30.208 30.208 30.208 16.896 0 30.208-14.08 30.208-30.208 0-17.152-13.568-30.72-30.208-30.72z m46.592-133.888c-16.896 0-30.208 13.568-30.208 30.208 0 16.896 13.312 30.464 30.208 30.464 16.896 0 30.464-13.568 30.464-30.464 0-16.64-13.568-30.208-30.464-30.208z m507.392 286.72c-16.896 0-30.208 13.312-30.208 30.72 0 16.64 13.312 30.208 30.208 30.208 16.896 0 30.464-13.568 30.464-30.208 0-17.408-13.568-30.72-30.464-30.72z m24.32-152.832c-16.896 0-30.464 13.568-30.464 30.72 0 16.128 13.568 30.208 30.464 30.208 16.896 0 30.72-14.08 30.72-30.208 0-17.152-13.824-30.72-30.72-30.72z m-46.848-133.888c-16.896 0-30.464 13.568-30.464 30.208 0 16.896 13.568 30.464 30.464 30.464 16.64 0 30.72-13.568 30.72-30.464 0-16.64-14.08-30.208-30.72-30.208zM356.608 759.296c0-13.824-4.864-27.392-15.104-37.888l-0.768-0.768c-44.544-44.544-69.632-105.216-69.632-168.448 0-47.872 14.592-93.696 39.936-131.84 94.208-140.032 301.312-141.056 395.264 0 63.232 94.208 50.176 220.672-29.44 300.288-10.496 10.496-16.128 24.576-16.128 38.656s5.632 28.16 16.128 38.4c10.752 10.496 24.832 15.872 38.912 15.872 13.824 0 28.16-5.12 38.912-15.872 32.512-32.256 57.6-70.656 75.008-112.64 52.736-127.488 24.576-277.504-72.448-375.808-152.832-154.624-414.72-133.12-537.344 49.92-37.12 56.32-58.624 122.368-58.624 192.768 0 91.904 36.864 180.992 101.888 245.76 10.496 10.496 24.576 15.872 38.656 15.872s28.416-5.12 38.656-15.872c11.008-10.24 16.128-24.32 16.128-38.4z"
+                  fill="url(#flowing-gradient)" 
+                  filter="url(#glow)" 
+                  p-id="1527">
+            </path>
+        </svg>
+	    <p>加载中……</p>
+    </div>
+	
+    <section id="carousel">
+	    <section id="character">
+		    <img src="res/img/character/mihonobourbon_01.png" alt="" class="hide">
+		    <img src="res/img/character/stillinlove_01.png" alt="" class="hide">
+		    <img src="res/img/character/daringtact_01_2.png" alt="" class="hide">
+		    <img src="res/img/character/lovesonlyyou_01.png" alt="" class="hide">
+		    <img src="res/img/character/espoircity_01.png" alt="" class="hide">
+		    <img src="res/img/character/chevalgrand_01.png" alt="" class="hide">
+		    <img src="res/img/character/mayanotopgun_01.png" alt="" class="hide">
+		    <img src="res/img/character/neouniverse_01.png" alt="" class="hide">
+		    <img src="res/img/character/mejirobright_01.png" alt="" class="hide">
+		    <img src="res/img/character/almondeye_01.png" alt="" class="hide">
+		    <img src="res/img/character/sakurachiyonoo_01.png" alt="" class="hide">
+		    <img src="res/img/character/vivlos_01.png" alt="" class="hide">
+	    </section>
+	    <section id="profile">
+		    <h1 id="char-name-cn"></h1>
+		    <h1 id="char-name-en"></h1>
+		    <p id="info"></p>
+	    </section>
+    </section>
+	
+    <section id="scroll">
+	    <p>SCROLL</p>
+	    <div class="arrow">
+		    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.78 48.19" class="nuxt-icon--fill" preserveAspectRatio="xMidYMid meet" data-v-d56ccb73="" data-v-7e1c1a78=""><path d="m7.76 48.19-7.59-7.6 16.41-16.41L0 7.6 7.6 0l24.18 24.18z"></path>
+		    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.78 48.19" class="nuxt-icon--fill" preserveAspectRatio="xMidYMid meet" data-v-d56ccb73="" data-v-7e1c1a78=""><path d="m7.76 48.19-7.59-7.6 16.41-16.41L0 7.6 7.6 0l24.18 24.18z"></path></svg>
+	    </div>
+    </section>
+    
+    <section id="character-modal" class="modal hidden">
+        <div class="modal-overlay">
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <img id="modal-character-image" src="" alt="Character Image">
+            </div>
+        </div>
+    </section>
+    
+    <section id="tip">
+	    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 160C544 124.7 515.3 96 480 96L160 96zM320 224C326.7 224 333 226.8 337.6 231.7L441.6 343.7C448.1 350.7 449.8 360.9 446 369.6C442.2 378.3 433.5 384 424 384L216 384C206.5 384 197.8 378.3 194 369.6C190.2 360.9 191.9 350.7 198.4 343.7L302.4 231.7C306.9 226.8 313.3 224 320 224z"/></svg>
+	    <div>
+		    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 160C544 124.7 515.3 96 480 96L160 96C124.7 96 96 124.7 96 160L96 480zM224 320C224 313.3 226.8 307 231.7 302.4L343.7 198.4C350.7 191.9 360.9 190.2 369.6 194C378.3 197.8 384 206.5 384 216L384 424C384 433.5 378.3 442.2 369.6 446C360.9 449.8 350.7 448.1 343.7 441.6L231.7 337.6C226.8 333.1 224 326.7 224 320z"/></svg>
+		    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M480 544C515.3 544 544 515.3 544 480L544 160C544 124.7 515.3 96 480 96L160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L480 544zM320 416C313.3 416 307 413.2 302.4 408.3L198.4 296.3C191.9 289.3 190.2 279.1 194 270.4C197.8 261.7 206.5 256 216 256L424 256C433.5 256 442.2 261.7 446 270.4C449.8 279.1 448.1 289.3 441.6 296.3L337.6 408.3C333.1 413.2 326.7 416 320 416z"/></svg>
+		    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M544 160C544 124.7 515.3 96 480 96L160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 160zM416 320C416 326.7 413.2 333 408.3 337.6L296.3 441.6C289.3 448.1 279.1 449.8 270.4 446C261.7 442.2 256 433.5 256 424L256 216C256 206.5 261.7 197.8 270.4 194C279.1 190.2 289.3 191.9 296.3 198.4L408.3 302.4C413.2 306.9 416 313.3 416 320z"/></svg>
+	    </div>
+    </section>
+    
+    <script src="index.js" type="module"></script>
+</body>
+</html>
