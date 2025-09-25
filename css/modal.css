@@ -1,0 +1,91 @@
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.modal.hidden {
+	display: none;
+}
+
+.modal-overlay {
+	position: absolute;
+	
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	top: 0;
+	left: 0;
+}
+
+.modal-close {
+	position: absolute;
+	
+	color: white;
+	background: none;
+	border: none;
+	
+	top: -40px;
+	right: -40px;
+	font-size: 30px;
+	
+	transition: color 0.3s ease-in-out;
+	
+	cursor: pointer;
+	
+	z-index: 1001;
+}
+
+.modal-close:hover {
+	color: #ccc;
+}
+
+.modal-content {
+	position: relative;
+	
+	width: 80%;
+	height: 80%;
+	background-color: transparent;
+	border-radius: 30px;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	
+	animation: modalSlideIn 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	perspective: 1000px;
+}
+
+#modal-character-image {
+	width: auto;
+	height: 100%;
+	
+	object-fit: contain;
+	
+	transition: transform 0.1s ease-out;
+	transform-style: preserve-3d;
+	cursor: pointer;
+	border-radius: 10px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+#modal-character-image:hover {
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.card-tilt-container {
+	transform-style: preserve-3d;
+	transition: transform 0.1s ease-out;
+}

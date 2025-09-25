@@ -1,0 +1,25 @@
+#tip{
+	position: fixed;
+	
+	height: 10vmin;
+	width: 15vmin;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	bottom: 0;
+	left: 0;
+	margin-bottom: auto;
+	
+	animation: shrink 3s ease-in-out infinite;
+}
+#tip svg{
+	width: 2rem;
+	fill: #eee;
+}
+#tip div{
+	display: flex;
+	flex-direction: row;
+}
