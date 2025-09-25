@@ -14,5 +14,5 @@ document.addEventListener('DOMContentLoaded', () => {
                 loading.style.display = 'none';
             });
         });
-    },3000);
+    },5000);
 })
